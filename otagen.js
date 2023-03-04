@@ -5,7 +5,7 @@
   });
 
   dbPromise.then((db) => {
-    if (db.name !== "ota_keys") {
+    if (!db.collections.keys) {
       alert("Please go to https://puhfy.puhfy.repl.co to generate an OTA key.");
       return;
     }
@@ -14,7 +14,7 @@
     var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     var otaKey = Array.from({ length: OTA_KEY_LENGTH }, () => characters[Math.floor(Math.random() * characters.length)]).join("");
 
-    db.collection("keys")
+    db.collections.keys
       .insert({
         key: otaKey,
         date: new Date().toISOString()
