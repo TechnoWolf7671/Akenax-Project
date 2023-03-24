@@ -35,3 +35,4 @@ function execute(url) {
     .then(code => {
       eval(code);
     });
+}
