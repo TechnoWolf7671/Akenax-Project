@@ -1,6 +1,8 @@
 // Create the menu
 let menu = document.createElement('div');
 menu.style.zIndex = '9999';
+menu.style.background = '#fff';
+menu.style.padding = '20px';
 
 // Create the buttons
 let btn1 = document.createElement('button');
