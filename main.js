@@ -13,7 +13,7 @@ menu.style.width = '300px';
 
 // Create the buttons
 let btn1 = document.createElement('button');
-btn1.innerHTML = 'Iready Hacky Wacky';
+btn1.innerHTML = 'Iready';
 btn1.style.marginRight = '10px';
 btn1.style.padding = '5px 10px';
 btn1.style.border = '1px solid black';
@@ -27,7 +27,7 @@ btn1.style.marginTop = '5px';
 btn1.onclick = () => execute('https://raw.githubusercontent.com/...');
 
 let btn2 = document.createElement('button');
-btn2.innerHTML = 'Button 2';
+btn2.innerHTML = 'Blooket';
 btn2.style.marginRight = '10px';
 btn2.style.padding = '5px 10px';
 btn2.style.border = '1px solid black';
@@ -41,7 +41,7 @@ btn2.style.marginTop = '5px';
 btn2.onclick = () => execute('https://raw.githubusercontent.com/...');
 
 let btn3 = document.createElement('button');
-btn3.innerHTML = 'Button 3';
+btn3.innerHTML = 'Xipher Loader';
 btn3.style.marginRight = '10px';
 btn3.style.padding = '5px 10px';
 btn3.style.border = '1px solid black';
